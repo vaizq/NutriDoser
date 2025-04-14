@@ -6,7 +6,7 @@ Most devices on the market have limited capabilites on the number of nutrients t
 
 > ⚠️ **Disclaimer:** This project is still at prototyping stage and should not be used without supervising.
 
-<img src="./Images/DoserModulePCB.jpg" alt="DoserModule pcb" width="640">
+<img src="./Images/DoserModulePCB.png" alt="DoserModule pcb" width="640">
 <img src="./Images/NutriDoser.jpg" alt="NutriDoser" width="640">
 
 ---
