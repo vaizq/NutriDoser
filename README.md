@@ -5,9 +5,9 @@ Most devices on the market have limited capabilites on the number of nutrients t
 **DoserModules** can be daisy chained and controller detects how many of these modules there are and a scheduler takes care that no more than **n** parallel dosers are running.
 
 > ⚠️ **Disclaimer:** This project is still at prototyping stage and should not be used without supervising.
-
-<img src="./Images/DoserModulePCB.png" alt="DoserModule pcb" width="640">
+ 
 <img src="./Images/NutriDoser.jpg" alt="NutriDoser" width="640">
+<img src="./Images/DoserModulePCB.png" alt="DoserModule pcb" width="640">
 
 ---
 
