@@ -1,0 +1,72 @@
+:root {
+  --bg: #1e1e1e;       /* Dark base background */
+  --bg-alt: #252526;    /* Slightly lighter dark background for contrast */
+  --text: #d4d4d4;      /* Light gray text */
+  --text-muted: #7d7d7d; /* Dimmed text for secondary info */
+  --border: #444;       /* Subtle gray borders */
+  --brand: #3391d0;     /* Darker VSCode-style blue */
+  --brand-light: #6caed8; /* Darker lighter blue for less intense accents */
+  --brand-hover: #2c7bbf; /* Even darker blue for hover effect */
+  --error: #f44747;     /* Red for errors/warnings */
+  --success: #56d64b;   /* Green for confirmations */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+a {
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--brand-hover);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: var(--text);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.5em 1em; 
+  margin-top: 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--brand);
+  cursor: pointer;
+  transition: var(--border) 0.25s;
+}
+button:hover {
+  border-color: var(--brand-hover);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+}

@@ -1,0 +1,34 @@
+cmake-build-debug*
+.settings*
+Debug*Debug*
+../.metadata*
+Debug*
+# Build directories
+/Debug/
+/Test/
+
+# STM32CubeMX generated files (can be regen'd)
+*.ioc
+
+# IDE-specific files
+/.project
+/.cproject
+/.settings/
+/.idea/
+*.launch
+*.log
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# User-specific files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# CubeMX auto-generated user metadata
+/.mxproject

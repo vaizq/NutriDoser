@@ -1,0 +1,88 @@
+GET http://192.168.1.29:80/status
+Accept: application/json
+
+###
+
+POST http://192.168.1.29:80/runDoser
+Content-Type: application/json
+
+{
+  "doserID": 7,
+  "flowRate": 0
+}
+
+###
+
+POST http://192.168.1.29:80/dose
+Content-Type: application/json
+
+{
+  "doserID": 0,
+  "flowRate": 60,
+  "amount": 1
+}
+
+###
+
+POST http://192.168.1.29:80/calibratePh
+Content-Type: application/json
+
+{
+  "target": 7.0
+}
+
+###
+
+POST http://192.168.1.29:80/calibrateEc
+Content-Type: application/json
+
+{
+  "target": 1.0
+}
+
+###
+
+POST http://192.168.1.29:80/startController
+Content-Type: application/json
+
+{
+  "name": "ph",
+  "config": {
+    "target": 7.0,
+    "acceptedErr": 0.1,
+    "adjustmentInterval": 10.0,
+    "flowRate": 60,
+    "doseAmount": 2,
+    "pHDownDoser": 0,
+    "pHUpDoser": 1
+  }
+}
+
+###
+
+POST http://192.168.1.29:80/startController
+Content-Type: application/json
+
+{
+  "name": "nutrient",
+  "config": {
+    "target": 1.0,
+    "acceptedErr": 0.1,
+    "adjustmentInterval": 10.0,
+    "flowRate": 60,
+    "schedule": {
+      "2" : 1, 
+      "3" : 2,
+      "4" : 3
+    }
+  }
+}
+
+###
+
+POST http://192.168.1.29:80/stopController
+Content-Type: application/json
+
+{
+  "name": "ph"
+}

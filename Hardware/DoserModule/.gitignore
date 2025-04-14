@@ -1,0 +1,28 @@
+# Ignore KiCad backup and autosave files
+*.bak
+*-backups/
+fp-info-cache/
+*.kicad_prl
+
+# Ignore KiCad-generated output files
+*.xml
+*.step
+*.stp
+*.jpg
+*.png
+
+# Ignore other common unwanted files
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Allow everything else, including core project files
+!.gitignore
+!README.md
+!License.txt
+!*.kicad_pcb
+!*.kicad_sch
+!*.kicad_pro
+!*.kicad_sym
