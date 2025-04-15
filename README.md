@@ -20,9 +20,8 @@ Most devices on the market have limited capabilites on the number of nutrients t
 
 ---
 
-## 🌐 Demo
-
-Coming soon...
+## 🌐 Demo video
+https://youtu.be/jbT3SvvVrZw
 
 ---
 
